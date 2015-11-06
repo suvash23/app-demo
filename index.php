@@ -18,6 +18,7 @@
     <![endif]-->
   </head>
   <body>
+
        <div id="wrapper">
 
         <!-- Navigation -->
@@ -61,20 +62,20 @@
                                     
                                     
                                     
-                                    <form role="form">
+                                    <form method="post" name="config_form" role="form" action="/form_submit.php">
                                         <div class="form-group">
                                             <label for="" class="control-label">Database name *</label>
-                                            <input required type="text" id="db_name" class="form-control">
+                                            <input name="db_name" type="text" id="db_name" class="form-control" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="db_username" class="control-label">Database username *</label>
-                                            <input required type="text" id="db_username" class="form-control">
+                                            <input name="db_username" type="text" id="db_username" class="form-control" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="db_password" class="control-label">Database password</label>
-                                            <input type="text" id="db_password" class="form-control">
+                                            <input name="db_password" type="password" id="db_password" class="form-control">
                                         </div>
-<button class="btn btn-default" type="submit">Save and continue</button>
+<button class="btn btn-default" type="submit" name="submit">Save and continue</button>
                                     </form>
                                     
                                     
