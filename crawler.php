@@ -1,4 +1,4 @@
-<?
+<?php
 include("PHPCrawl/libs/PHPCrawler.class.php");
 class SBCrawler extends PHPCrawler { 
  function handleDocumentInfo(PHPCrawlerDocumentInfo $p){ 

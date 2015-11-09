@@ -8,13 +8,16 @@
 
 require 'vendor/autoload.php';
 
+//Created MyConfig instance
 $myconfig = new MyConfig;
-
+//Read db settings file
 $db_config = MyConfig::read('config/db_settings.php');
 
-//$whoops = new \Whoops\Run;
-//$whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
-//$whoops->register();
+$whoops = new \Whoops\Run;
+$whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+$whoops->register();
+
+//create a new "Capsule" manager instance
 use Illuminate\Database\Capsule\Manager as Capsule;
 
 $capsule = new Capsule;
@@ -64,3 +67,6 @@ $capsule->bootEloquent();
 //    echo "Please check the credentials";
 //}
 //echo $conn;
+class DB extends Capsule
+{
+}

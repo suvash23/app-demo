@@ -32,6 +32,7 @@
     </style>
     <body>
     <?php
+    //default instller file
     $page = "installer_body.php";
     //Get page id to load view
     if (isset($_GET["error"])) {
@@ -47,11 +48,9 @@
                     <a href="index.html" class="navbar-brand">Demo Admin v1.0</a>
                 </div>
                 <!-- /.navbar-header -->
-                <!-- /.navbar-top-links -->
-
+                
                 <div role="navigation" class="navbar-default sidebar">
                     <div class="sidebar-nav navbar-collapse">
-
                     </div>
                     <!-- /.sidebar-collapse -->
                 </div>
