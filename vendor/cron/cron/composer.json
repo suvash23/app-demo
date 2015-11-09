@@ -1,0 +1,26 @@
+{
+    "name": "cron/cron",
+    "type": "library",
+    "description": "Cronjobs",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dries De Peuter",
+            "email": "dries@nousefreak.be"
+        }
+    ],
+    "require": {
+        "php": "~5.3",
+        "symfony/process": "~2.4"
+    },
+    "autoload": {
+        "psr-0" : {
+            "Cron" : "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
