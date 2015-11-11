@@ -7,7 +7,7 @@
  */
 
 require 'vendor/autoload.php';
-
+require 'config/myconfig.php';
 //Created MyConfig instance
 $myconfig = new MyConfig;
 //Read db settings file
@@ -70,3 +70,4 @@ $capsule->bootEloquent();
 class DB extends Capsule
 {
 }
+class Url extends Illuminate\Database\Eloquent\Model {}
