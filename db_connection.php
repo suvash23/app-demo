@@ -7,7 +7,7 @@
  */
 
 require 'vendor/autoload.php';
-require 'config/myconfig.php';
+require_once 'config/myconfig.php';
 //Created MyConfig instance
 $myconfig = new MyConfig;
 //Read db settings file

@@ -17,7 +17,7 @@
                     <!-- /.col-lg-6 (nested) -->
                     <div class="col-lg-6">
 
-                        <form method="post" name="config_form" role="form" action="/app-demo/form_action.php">
+                        <form method="post" name="config_form" role="form" action="/form_action.php">
                             <div class="form-group">
                                 <label for="" class="control-label">Database name *</label>
                                 <input name="db_name" type="text" id="db_name" class="form-control" required>
